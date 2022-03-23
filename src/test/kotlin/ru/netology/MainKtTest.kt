@@ -114,13 +114,13 @@ class MainKtTest {
     }
 
     @Test
-    fun countCommission_MinCommissionForMir_Fail() {
-        val typeOfCard = "Мир"
+    fun countCommission_MinCommissionForVisa_Fail() {
+        val typeOfCard = "VISA"
         val sumOfPreviousTransfers = 4500.00
         val transactionSum = 2000.00
 
         val result = countCommission(typeOfCard, sumOfPreviousTransfers, transactionSum)
 
-        assertEquals(25.00, result, 0.00001)
+        assertEquals(3522.00, result, 0.00001)
     }
 }
